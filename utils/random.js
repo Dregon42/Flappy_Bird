@@ -11,7 +11,7 @@ export const getPipeSizePosPair = (addToPosX = 0) => {
     let yPosTop = -getRandom(300, windowHeight - 100)
 
     let pipeTop = {pos: {x:windowWidth + addToPosX, y: yPosTop}, size: {height: windowHeight * 2, width: 75}};
-    let pipeBottom = {pos: {x:windowWidth + addToPosX, y: windowHeight * 2 + 200 - yPosTop}, size: {height: windowHeight * 2, width: 75}};
+    let pipeBottom = {pos: {x:windowWidth + addToPosX, y: windowHeight * 2 + 200 + yPosTop}, size: {height: windowHeight * 2, width: 75}};
 
     return {pipeTop, pipeBottom}
 };
